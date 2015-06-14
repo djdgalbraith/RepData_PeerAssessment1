@@ -108,7 +108,7 @@ In the initial analysis we performed complete case analysis and dropped these ob
 We produce a dataset containing the imputed data by populating NAs with the mean value for the 5-minute time interval in question.
 
 ```{r}
-activity.imputed <- transform(activity.data, steps = ifelse(is.na(activity.data$steps), average.steps.per.interval$steps[match(activity.data$interval, average.steps.per.interval$interval)], activity.data$steps))
+activity.imputed <- transform(activity.data, steps = ifelse(is.na(activity.data$steps), average.steps.per.interval$steps[match(activity.data$time, average.steps.per.interval$time)], activity.data$steps))
 ```
 
 <!-- 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps? -->
