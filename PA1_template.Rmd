@@ -139,7 +139,7 @@ The values resulting from the analysis using the imputed data do differ from tho
 * The **mean** total number of steps taken per day is `r format(round(imputed.mean.steps, 0))`
 * The **median** total number of steps taken per day is `r format(round(imputed.median.steps,0))`
 
-Both the mean and the median values are equal due to the imputation strategy of mean replacement which imputed 8 days of data with the average values for the interval in question.  This results in an increase of `r format(round(imputed.mean.steps - mean.steps, 0))` in the average number of daily steps, which amounts to a total increase of `r format(round(imputed.mean.steps * 8, 0))` steps across the measured period of `r length(daily.steps)` days.
+Both the mean and the median values are equal due to the imputation strategy of mean replacement which imputed 8 days of data with the average values for the interval in question.  This results in an increase of `r format(round(imputed.mean.steps - mean.steps, 0))` in the average number of daily steps, which amounts to a total increase of `r format(round(imputed.mean.steps * 8, 0))` steps across the measured period of `r nrow(daily.steps)` days.
 
 ### Are there differences in activity patterns between weekdays and weekends?
 

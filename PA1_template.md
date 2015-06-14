@@ -145,7 +145,7 @@ The values resulting from the analysis using the imputed data do differ from tho
 * The **mean** total number of steps taken per day is 10766
 * The **median** total number of steps taken per day is 10766
 
-Both the mean and the median values are equal due to the imputation strategy of mean replacement which imputed 8 days of data with the average values for the interval in question.  This results in an increase of 1412 in the average number of daily steps, which amounts to a total increase of 86130 steps across the measured period of 2 days.
+Both the mean and the median values are equal due to the imputation strategy of mean replacement which imputed 8 days of data with the average values for the interval in question.  This results in an increase of 1412 in the average number of daily steps, which amounts to a total increase of 86130 steps across the measured period of 61 days.
 
 ### Are there differences in activity patterns between weekdays and weekends?
 
